@@ -7,6 +7,11 @@ from .models import Link
 def index(request):
 	return HttpResponse("this is just a test")
 
+def view_titles(request):
+	return render (request, 'view_titles.html', {
+		"links" : Link.objects.all(),
+	})
+
 def scrape_reddit(request):
 	titles = scrape_page(6)
 
@@ -16,4 +21,4 @@ def scrape_reddit(request):
 
 	Link.objects.bulk_create(insert_list) 
 
-	return HttpResponse("saved")
+	return HttpResponse("Saved")
