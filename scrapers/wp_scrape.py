@@ -1,8 +1,36 @@
+# offer
+# 	*name
+# 	*vendor
+# 	*contest bool
+# 	*recur bool
+# 	*featured bool
+# 	*launch date
+# 	*sales
+# 	*conversion rate
+# 	*visitor value
+# 	*refund rate
+# 	keywords
+
+# vendor
+# 	name
+# 	location
+# 	sales total
+# 	has many offers
+# 	followers
+# 	number of potd
+# 	member since
+# 	contact links
+
+# product
+# 	price
+# Enter user credentials in commandline or ENV
+
+
 import requests
 from bs4 import BeautifulSoup
 
-username = "jimmydata"
-password = "swordfish123"
+username = ""
+password = ""
 login_url = "https://warriorplus.com/login/login.php"
 data_url = "https://warriorplus.com/wsopro/affiliate/get-offers.php?o=7"
 
